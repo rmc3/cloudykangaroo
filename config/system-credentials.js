@@ -1,4 +1,10 @@
 CrowdAuth = new Array();
-CrowdAuth['server'] = "https://crowd.example.com";
-CrowdAuth['application'] = "cloudy-kangaroo";
-CrowdAuth['password'] = "secretwords";
+CrowdAuth['server'] = "https://crowd.contegix.com";
+CrowdAuth['application'] = 'cloudy-kangaroo';
+CrowdAuth['password'] = '7sPApUeESgMq';
+UberAuth = new Array();
+UberAuth['username'] = 'jonathan.creasy';
+//UberAuth['password'] = 'Y7Y6yZh7GrTkLrpVBbLCHxtFqFHyKTtd7sPApUeESgMq';
+UberAuth['password'] = 'hGpY4dhH6gYGY3N8wcB688ztdRM8YV8n';
+UberAuth['url'] = 'https://portal.contegix.com/api/2.0'
+UberAuth['refresh.interval'] = 1;

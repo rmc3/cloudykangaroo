@@ -6,6 +6,12 @@ module.exports = function (app, config, passport, redisClient) {
   require('./sensu')(app, config, passport, redisClient);
   require('./puppet')(app, config, passport, redisClient);
 
+  app.get('/test'
+    , function (req, res) {
+        res.type('text/html');
+        res.send('<html><head><title>foo</title></head><body>hello test</body></html>');
+    });
+
   app.get('/render'
     , function (req, res) {
       var phantom = require('phantom');

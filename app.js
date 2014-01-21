@@ -29,19 +29,6 @@ var auditLog = ctxlog('audit', 'info', {level: 'error'}, {level: 'debug'});
 var fs = require('fs');
 var logstream = fs.createWriteStream(config.log.access_log, {flags: 'a'});
 
-var util = require('util');
-
-util.inspect.styles =
-{ special: 'cyan',
-  number: 'yellow',
-  boolean: 'yellow',
-  undefined: 'grey',
-  null: 'bold',
-  string: 'green',
-  date: 'magenta',
-  regexp: 'red'
-};
-
 /*
   Connect to Redis
  */

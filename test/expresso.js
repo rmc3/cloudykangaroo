@@ -2,7 +2,7 @@ var app = require('../app'),
     assert = require('assert');
 
 module.exports = {
-  'GET /account/login': function(){
+  'GET /test': function(){
     assert.response(app,
       { url: '/account/login' },
       { status: 302, headers: { 'Content-Type': 'text/html; charset=utf-8' }},
